@@ -60,6 +60,8 @@ It is also a good example on how to use the tools provided by this library.
 
 # Main features
 
+Main features.
+
 <!-- ![Graph Representation of experiment.\label{fig:graph_rep}](graph_rep.png)
 \autoref{fig:example}. -->
 
@@ -84,9 +86,9 @@ and refer to \autoref{eq:fourier} from text. -->
 
 <!-- Work in progress -->
 
-Citations to entries in paper.bib should be in
+<!-- Citations to entries in paper.bib should be in
 [rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
+format. -->
 
 If you want to cite a software repository URL (e.g. something on GitHub without a preferred
 citation) then you can do it with the example BibTeX entry below for @fidgit.
@@ -101,6 +103,8 @@ For a quick reference, the following citation commands can be used:
 
 # Figures
 
+Work in progress.
+
 <!-- Work in progress -->
 
 <!--
@@ -114,3 +118,5 @@ and referenced from text using \autoref{fig:example}.
 We acknowledge contributions from Francisco Doblas-Reyes, Kim Serradell and all our Earth Science users.
 
 # References
+
+No referencess
