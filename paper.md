@@ -20,8 +20,7 @@ affiliations:
   - name: Independent Researcher
     index: 3
 date: 26 November 2020
-# bibliography: paper.bib
-
+bibliography: paper.bib
 # Optional fields if submitting to a AAS journal too, see this blog post:
 # https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
 # aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
@@ -62,56 +61,18 @@ It is also a good example on how to use the tools provided by this library.
 
 Main features.
 
-<!-- ![Graph Representation of experiment.\label{fig:graph_rep}](graph_rep.png)
-\autoref{fig:example}. -->
-
-<!-- Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$
-\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.
-$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int\_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text. -->
-
 # Citations
 
 <!-- Work in progress -->
 
-<!-- Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format. -->
-
 If you want to cite a software repository URL (e.g. something on GitHub without a preferred
 citation) then you can do it with the example BibTeX entry below for @fidgit.
 
-For a quick reference, the following citation commands can be used:
-
-<!--
-- `@author:2001` -> "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
--->
+For a quick reference, the following citation commands can be used.
 
 # Figures
 
 Work in progress.
-
-<!-- Work in progress -->
-
-<!--
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
--->
 
 # Acknowledgements
 
