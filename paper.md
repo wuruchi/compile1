@@ -1,11 +1,11 @@
 ---
-title: "Autosumit GUI: A ReactJS based visual interface to monitor experiments in a High Performance Computing environment"
+title: "Autosumit GUI: A ReactJS-based Graphical User Interface to Monitor Experiments in a High Performance Computing Environment"
 tags:
   - Python
   - High Performance Computing
   - Workflow Manager
 authors:
-  - name: Wilmer V. Uruchi Ticona^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
+  - name: Wilmer V. Uruchi Ticona ##^[Custom footnotes for e.g. denoting who the corresponding author is can be included like this.]
     ## orcid: 0000-0003-0872-7098
     affiliation: 1 ##"1, 2" # (Multiple affiliations must be quoted)
   - name: Miguel Castrillo
@@ -15,10 +15,6 @@ authors:
 affiliations:
   - name: Barcelona Supercomputing Center
     index: 1
-  - name: Institution Name
-    index: 2
-  - name: Independent Researcher
-    index: 3
 date: 26 November 2020
 bibliography: paper.bib
 # Optional fields if submitting to a AAS journal too, see this blog post:
@@ -29,7 +25,7 @@ bibliography: paper.bib
 
 # Summary
 
-`Autosubmit GUI` is a front-end software developed using _Javascript_ and _ReactJS_ that aims to show complex
+`Autosubmit GUI` is a front-end software developed using `Javascript` and `ReactJS` that aims to show complex
 information from the execution of the workflow of experiments (managed by `Autosubmit`) in a _High Performance Computing (HPC)_.
 `Autosubmit` is a Python-based workflow manager that handles complex tasks involving different sub steps (e.g. scientific computational experiments) which ma be executed in one or different computing systems (platforms), from _High Performance Computers_ to small clusters or workstations. This workflow manager is able to orchestrate the tasks (jobs) that constitute the workflow while respecting their dependencies and handling errors.
 
@@ -49,7 +45,29 @@ Finally, a word on our programming language and framework choice. _Javascript_ w
 
 # Main features
 
-Main features.
+![Autosubmit GUI main window.\label{fig:mainwindow}](mainwindow.jpg)
+
+- Users can search for experiments that match certain criteria: Currently active experiments (those being executed), experiments belonging to a certain user, description of experiments that contain certain word, and other filters. The result is presented in a main window \autoref{fig:mainwindow} where the experiment progress is displayed for each result along other relevant information. Each experiment item in the result gives direct access to the experiment representation (tree view by default) or a quick view which displays only the most important information. There is an option, from the experiment item, to see only a summary of the current progress of the experiment.
+
+- User can see the representation of their experiment in three ways with some variations:
+  - Tree View \autoref{fig:treeview}: Uses `FancyTree` to present the experiment jobs in a structured and hierarchical fashion.
+  - Graph View \autoref{fig:graphview}: Uses `vis.js` to present the experiment jobs in a graph.
+  - Quick View: Uses `FancyTree` to present a browsable list of the experiment jobs.
+
+![Tree View.\label{fig:treeview}](treeview.jpg)
+
+![Graph View.\label{fig:graphview}](graphview.jpg)
+
+- All experiment representations allow search of jobs by name, or by patterns in the name using the `*` wildcard.
+- The graph view allows the user to select some nodes (jobs) and generate a command through the `Change Status` button.
+- The graph view presents variations of the representation for ease of usage.
+- The graph and tree views allow the user to see detailed information of a job by clicking on the node or item.
+- The tree view allows the user to select some items (jobs) and generate a command through the `Activate Selection Mode` button.
+- `ACTIVE` experiments (shown at the top of the page next to the experiment identifier) can update the representation (graph or tree) according to changes in real time through the `Start Job Monitor` option. This functionality doesn't prompt a full component rerender, instead, the nodes or items are update individually and independently.
+- The last lines of the log of the experiment can be visualized.
+- Statistics of the workflow execution are provided through the `Statistics` tab using `react-google-charts`.
+- Performance metrics of the experiment are displayed in the `Performance` tab.
+- Historical data is displayed for individual jobs through a button next to the job's name in the selection tile.
 
 # Citations
 
