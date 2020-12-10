@@ -71,6 +71,17 @@ Finally, a word on our programming language and framework choice. _Javascript_ w
 
 # Citations
 
+<!-- They talk about BibTex but maybe you need to format it further --> 
+
+@inproceedings{manubens2016seamless,
+  title={Seamless management of ensemble climate prediction experiments on hpc platforms},
+  author={Manubens-Gil, Domingo and Vegas-Regidor, Javier and Prodhomme, Chloe and Mula-Valls, Oriol and Doblas-Reyes, Francisco J},
+  booktitle={High Performance Computing \& Simulation (HPCS), 2016 International Conference on},
+  pages={895--900},
+  year={2016},
+  organization={IEEE}
+}
+
 <!-- Work in progress -->
 
 If you want to cite a software repository URL (e.g. something on GitHub without a preferred
