@@ -26,11 +26,11 @@ bibliography: paper.bib
 # Summary
 
 `Autosubmit GUI` is a front-end software developed using `Javascript` and `ReactJS` that aims to show complex
-information from the execution of the workflow of experiments (managed by `Autosubmit`) in a _High Performance Computing (HPC)_.
-`Autosubmit` is a Python-based workflow manager that handles complex tasks involving different sub steps (e.g. scientific computational experiments) which ma be executed in one or different computing systems (platforms), from _High Performance Computers_ to small clusters or workstations. This workflow manager is able to orchestrate the tasks (jobs) that constitute the workflow while respecting their dependencies and handling errors.
+information from the execution of the experiments' workflow (managed by `Autosubmit`) in a **High-Performance Computing (HPC)**.
+`Autosubmit` [@autosubmit] is a Python-based workflow manager that handles complex tasks involving different sub-steps (e.g., scientific computational experiments). These tasks may be executed in one or many other computing systems (platforms), from _High-Performance Computers_ to small clusters or workstations. This workflow manager can orchestrate the tasks (jobs) that constitute the workflow while respecting their dependencies, handling errors, and retrieving remote logs, among other features.
 
-This front-end software consumes information served by an API (`Autosubmit API`) that collects information from the execution of the workflow of experiments.
-An experiment consists of jobs that are executed on the selected platform following a established sequence. The execution of an experiment and its jobs generates a high amount of information that needs to be visualized later by users. `Autosubmit API` summarizes this information and presents it as API requests. `Autosubmit GUI` consumes these API requests and shows the information available in a condensed, comprehensive, and dinamic way. `Autosubmit GUI` uses three highly popular and useful libraries: `FancyTree`, `vis.js`, and `react-google-charts`; among other web resources that facilitate the visualization of information and information updates.
+This front-end software consumes information served by an **API** (`Autosubmit API` [@api]) that collects information from the execution of the workflow of experiments.
+An experiment consists of jobs that are executed on the selected platforms following an established sequence. The execution of an experiment and its jobs generates a high amount of information that needs to be visualized later by users. `Autosubmit API` summarizes this information and presents it as API requests. `Autosubmit GUI` consumes these API requests and shows the information available in a condensed, comprehensive, and dinamic way. `Autosubmit GUI` uses three highly popular and useful libraries: `FancyTree` [@fancytree], `vis.js` [@visjs], and `react-google-charts` [@reactgoogle]; among other web resources that facilitate the visualization of information and information updates.
 
 # Statement of need
 
@@ -69,14 +69,14 @@ Finally, a word on our programming language and framework choice. _Javascript_ w
 - Performance metrics of the experiment are displayed in the `Performance` tab.
 - Historical data is displayed for individual jobs through a button next to the job's name in the selection tile.
 
-# Citations
+<!-- # Citations -->
 
 <!-- Work in progress -->
 
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
+<!-- If you want to cite a software repository URL (e.g. something on GitHub without a preferred
 citation) then you can do it with the example BibTeX entry below for @fidgit.
 
-For a quick reference, the following citation commands can be used.
+For a quick reference, the following citation commands can be used. -->
 
 <!-- # Figures
 
@@ -84,8 +84,6 @@ Work in progress. -->
 
 # Acknowledgements
 
-We acknowledge contributions from Francisco Doblas-Reyes, Kim Serradell and all our Earth Science users.
+We acknowledge contributions from Francisco Doblas-Reyes, Kim Serradell and all our Earth Science Department users.
 
 # References
-
-No referencess
